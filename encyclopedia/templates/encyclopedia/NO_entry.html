@@ -1,0 +1,46 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}: #404 Not Found
+{% endblock %}
+
+{% block nav %}
+    <nav class="divMenu">
+
+        <ul>
+            <li><a href="{% url 'homepage' %}">Home</a></li>
+            <li><a href="{% url 'random' %}">Random Page</a></li>
+        </ul>
+
+{% endblock %}
+
+{% block body %}
+    <div class="noEntry">
+
+        <div class="img404">
+
+            <img src="{% static 'encyclopedia/Images/error404.png' %}" alt="Error Code 404">
+
+        </div>
+
+        <div class="text404">
+
+            <h1>Oops!</h1>
+            
+            <h2>It seems we can't find the "{{ title.capitalize }}" page you're looking for.</h4>
+        
+            <p><em>Error code: 404</em></p>
+
+        </div>
+
+        <div class="btn404">
+            <div>
+                <a href="{% url 'newPage' %}" role="button">Create a New Page</a>
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}

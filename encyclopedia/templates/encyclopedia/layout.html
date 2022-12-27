@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link href="{% static 'encyclopedia/CSS/style.css' %}" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'encyclopedia/Images/harvard.png' %}">
+    </head>
+    <body>
+
+            <div class="divNavbar">
+
+                <div class="divSymbol">
+
+                    <img src="{% static 'encyclopedia/Images/encyclopedia.png' %}" alt="Wiki"/>
+                
+                </div>
+
+                <div class="divForm">
+
+                    <form action="/wiki/search" method="GET">
+                        <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
+                    </form>
+
+                </div>
+                
+                {% block nav %}
+
+                    <nav class="divMenu">
+
+                        <ul>
+                            <li><a href="{% url 'homepage' %}">Home</a></li>
+                            <li><a href="{% url 'newPage' %}" method="POST">Create New Page</a></li>
+                            <li><a href="{% url 'random' %}">Random Page</a></li>
+                        </ul>
+                   
+                {% endblock %}
+    
+                </nav>
+
+
+            </div>
+
+            <div class="divBody">
+
+                <div class="blockBody">
+
+                    {% block body %}
+                    {% endblock %}
+
+                </div>
+
+            </div>
+
+    </body>
+</html>

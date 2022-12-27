@@ -1,0 +1,38 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block nav %}
+    <nav class="divMenu">
+
+        <ul>
+            <li><a href="{% url 'homepage' %}">Home</a></li>
+            <li><a href="{% url 'random' %}">Random Page</a></li>
+        </ul>
+{% endblock %}
+
+{% block body %}
+
+    <h1 class="head-index">Edit Page</h1>
+
+        <div class="newForm">
+            <form action="{% url 'newPage' %}" method="POST">
+
+                {% csrf_token %}
+                {{ form.as_p }}
+            
+                <div class="btn">
+
+                    <div class="btnSave">
+                        <button type="submit" name="btnSave">Save</button>
+                    </div>
+
+                </div>
+                
+            </form>
+        </div>
+
+{% endblock %}

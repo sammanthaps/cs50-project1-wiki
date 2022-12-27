@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  background-color: #F8F8F8;
+  font-family: "Linux Libertine", serif;
+}
+
+.divNavbar {
+  width: 180px;
+  height: 635px;
+  margin-top: 15px;
+  background-color: #F8F8F8;
+  float: left;
+}
+
+.divSymbol {
+  padding: 0px 15px;
+}
+
+.divSymbol img {
+  width: 150px;
+  background-color: none;
+}
+
+.divForm {
+  padding: 10px 15px;
+}
+
+.divForm form {
+  border: 2px solid darkgoldenrod;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.divForm form input {
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  padding-left: 8px;
+  color: #a51c30;
+  font-weight: bold;
+  background-color: #F8F8F8;
+}
+
+.divForm form input:focus {
+  outline: none;
+}
+
+.divForm form ::-webkit-input-placeholder {
+  color: #b7b7b7;
+}
+
+.divForm form :-ms-input-placeholder {
+  color: #b7b7b7;
+}
+
+.divForm form ::-ms-input-placeholder {
+  color: #b7b7b7;
+}
+
+.divForm form ::placeholder {
+  color: #b7b7b7;
+}
+
+.divMenu ul {
+  list-style: none inside;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+.divMenu ul a {
+  font-family: "Times New Roman", serif;
+  text-decoration: none;
+  color: darkgoldenrod;
+  cursor: pointer;
+}
+
+.divMenu ul a:hover {
+  color: #A51C30;
+}
+
+.divBody {
+  margin-left: 180px;
+  height: 650px;
+}
+
+.divBody .blockBody {
+  height: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid darkgoldenrod;
+  border-left: 1px solid darkgoldenrod;
+  font-family: "Linux Libertine", serif;
+}
+
+.divBody .blockBody .head-index {
+  color: #A51C30;
+  font-family: "Times New Roman", serif;
+}
+
+.divBody .blockBody .index-ul li {
+  color: #A51C30;
+  padding-bottom: 8px;
+}
+
+.divBody .blockBody .index-ul li a {
+  color: #A51C30;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.divBody .blockBody .index-ul li a:hover {
+  color: darkgoldenrod;
+}
+
+.divBody .blockBody .divAlert {
+  height: 40px;
+  width: 100%;
+}
+
+.divBody .blockBody .divAlert .alert_error {
+  color: #721c24;
+  font-weight: 400;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 12px 20px;
+  width: 96%;
+}
+
+.divBody .blockBody .divAlert .alert_error .alert_link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #491217;
+}
+
+.divBody .blockBody .newForm .form_title {
+  width: 98%;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid darkgoldenrod;
+  color: #A51C30;
+  font-family: "Linux Libertine", serif;
+  font-size: 16px;
+  resize: none;
+}
+
+.divBody .blockBody .newForm .form_content {
+  width: 98%;
+  height: 370px;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 1px solid darkgoldenrod;
+  color: #A51C30;
+  font-family: "Linux Libertine", serif;
+  font-size: 16px;
+  resize: none;
+}
+
+.divBody .blockBody .newForm .form_title:focus, .divBody .blockBody .newForm .form_content:focus {
+  outline: none;
+}
+
+.divBody .blockBody .newForm .btn .btnSave, .divBody .blockBody .newForm .btn .btnCancel {
+  display: inline-block;
+}
+
+.divBody .blockBody .newForm .btn .btnSave button, .divBody .blockBody .newForm .btn .btnCancel button {
+  float: left;
+  height: 35px;
+  border-radius: 15px;
+  font-family: "Linux Libertine", serif;
+  font-size: 18px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  cursor: pointer;
+}
+
+.divBody .blockBody .newForm .btn .btnSave button:focus, .divBody .blockBody .newForm .btn .btnCancel button:focus {
+  outline: none;
+}
+
+.divBody .blockBody .newForm .btn .btnSave button {
+  width: 90px;
+  border: 2px solid #dba92b;
+  background-color: #e2b74a;
+  color: #A51C30;
+  font-weight: 600;
+}
+
+.divBody .blockBody .newForm .btn .btnSave button:hover {
+  background-color: #ffd365;
+}
+
+.divBody .blockBody .noEntry {
+  padding-top: 100px;
+}
+
+.divBody .blockBody .noEntry .img404 {
+  float: left;
+  padding: 0 45px;
+}
+
+.divBody .blockBody .noEntry .img404 img {
+  width: 404px;
+}
+
+.divBody .blockBody .noEntry .text404 {
+  padding-top: 63px;
+}
+
+.divBody .blockBody .noEntry .text404 h1 {
+  font-size: 63px;
+  color: #A51C30;
+}
+
+.divBody .blockBody .noEntry .text404 p {
+  font-size: 16px;
+  color: #A51C30;
+}
+
+.divBody .blockBody .noEntry .btn404 {
+  padding-top: 30px;
+}
+
+.divBody .blockBody .noEntry .btn404 div a {
+  padding: 5px;
+  border: 2px solid #dba92b;
+  border-radius: 10px;
+  background-color: #e2b74a;
+  color: #A51C30;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.divBody .blockBody .noEntry .btn404 div a:hover {
+  background-color: #ffd365;
+}
+
+.divBody .blockBody .btnEdit {
+  text-align: right;
+  padding: 5px 8px;
+}
+
+.divBody .blockBody .btnEdit a {
+  border: 1px solid #c92941;
+  border-radius: 8px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #e7ae1f;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #b42238;
+}
+/*# sourceMappingURL=style.css.map */
